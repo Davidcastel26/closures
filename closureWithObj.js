@@ -1,6 +1,6 @@
-function createCounter(){
+function createCounter(counter = 0){
     //setting our variable counter as 0
-    let counter = 0;
+    // let counter = 0;
     //return will be an object but 
     return {
         increase: function(){
