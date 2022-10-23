@@ -12,7 +12,7 @@ function createCounter(){
             return counter;
         },
         getValue: function(){
-            return contador;
+            return counter;
         }
     }
 }
