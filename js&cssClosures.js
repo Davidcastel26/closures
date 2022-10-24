@@ -3,3 +3,5 @@ function createMsg(typeMsg, styles){
         console.log(`%c ${typeMsg}: ${str}`, styles)
     }
 }
+
+const error= createMsg('Error', 'background: red; color:white')
