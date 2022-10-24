@@ -5,3 +5,4 @@ function createMsg(typeMsg, styles){
 }
 
 const error= createMsg('Error', 'background: red; color:white')
+error('Account not found')
