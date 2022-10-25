@@ -40,3 +40,15 @@ function cacheFunction(){
         return cache[arg ]
     }
 } 
+
+const cb = function(x){
+    return x * 2;
+}
+
+const cacheCall = cacheFunction(cb)
+const val1 = cacheCall(2)
+console.log('val1', val1)
+const val2 = cacheCall(3)
+console.log('val2', val2)
+const val3 = cacheCall(2)
+console.log('val3', val3)
