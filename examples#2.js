@@ -31,5 +31,12 @@ newCounter2 = counter();// Nueva variable counter
 //tips, usa un objeto one caa propiea sea un argumento, y el valor el resultao.
 // usa hasOwnProperty!
 function cacheFunction(){
-
-}
+    let cache = {}
+    return function(arg){
+        
+        if(cache.hasOwnProperty(arg)) return cache[arg];
+        
+        cache[arg] = cb(arg)
+        return cache[arg ]
+    }
+} 
